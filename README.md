@@ -35,6 +35,6 @@ npm install react-icons
 yarn add @mui/icons-material
 
 
-https://github.com/sonyuyoung/todolist/assets/139303925/03288b17-d698-48c1-b9ac-468442edcd4d
 
+https://github.com/sonyuyoung/todolist/assets/139303925/5f4394ca-833b-4d66-aec7-8e062ab52bd4
 
