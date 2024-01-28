@@ -1,44 +1,21 @@
-import React, { useState, useRef, useReducer } from "react";
+import React, { useRef, useReducer } from "react";
 import styled from "styled-components";
 import TodoBase from "./TodoBase";
 import TodoInsert from "./TodoInsert";
 import TodoList from "./TodoList";
 import { useCallback } from "react";
 
-import {
-  BrowserRouter,
-  Routes,
-  Route,
-  Link,
-  useNavigate,
-} from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 const Main_css = styled.div`
   margin: 0;
   padding: 0;
-  //회색, 배경색은 나중에 본인이 좋아하는 색으로 변경.
   background: #ffffff;
 `;
 
-// 문제점 제시 , 더미데이터 3000개로 추가하고, 느려지는 부분 만든후 확인,적용해보기
 const TodoMain = () => {
   const navigate = useNavigate();
 
-  // const createBulkTodos = () => {
-  //   const array = [];
-  //   for (let i = 0; i <= 1000; i++) {
-  //     array.push({
-  //       id: i,
-  //       text: `더미데이터 : ${i}`,
-  //       checked: false,
-  //     });
-  //   }
-  //   return array;
-  // };
-
-  // 여기 주석
-  // const [todos, setTodos] = useState(createBulkTodos());
-  //추가로 입력이되는 todo부분의 아이디를 3001부터 할당할 예정
   const StyledButton = styled.button`
     /* 여기에 스타일을 추가하세요 */
     background-color: #555; /* 예시 색상 */
