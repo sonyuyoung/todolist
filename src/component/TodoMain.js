@@ -10,7 +10,6 @@ import { useNavigate } from "react-router-dom";
 const MainCss = styled.div`
   margin: 0;
   padding: 0;
-  //회색, 배경색은 나중에 본인이 좋아하는 색으로 변경.
   background: #ffffff;
 `;
 
