@@ -7,7 +7,7 @@ import { useCallback } from "react";
 
 import { useNavigate } from "react-router-dom";
 
-const Main_css = styled.div`
+const MainCss = styled.div`
   margin: 0;
   padding: 0;
   //회색, 배경색은 나중에 본인이 좋아하는 색으로 변경.
@@ -137,7 +137,7 @@ const TodoMain = () => {
   );
 
   return (
-    <Main_css>
+    <MainCss>
       <TodoBase>
         <TodoInsert onInsert={onInsert} />
         {/* 부모(TodoMain)에서 세터 , 자식(ToDoList)에서 게터 /   */}
@@ -148,7 +148,7 @@ const TodoMain = () => {
       <StyledButton onClick={() => navigate("/")}>
         다른디자인 보러가기
       </StyledButton>
-    </Main_css>
+    </MainCss>
   );
 };
 
