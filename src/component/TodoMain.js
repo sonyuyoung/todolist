@@ -1,17 +1,11 @@
-import React, { useState, useRef, useReducer } from "react";
+import React, { useRef, useReducer } from "react";
 import styled from "styled-components";
 import TodoBase from "./TodoBase";
 import TodoInsert from "./TodoInsert";
 import TodoList from "./TodoList";
 import { useCallback } from "react";
 
-import {
-  BrowserRouter,
-  Routes,
-  Route,
-  Link,
-  useNavigate,
-} from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 const Main_css = styled.div`
   margin: 0;

@@ -1,11 +1,6 @@
 import React from "react";
 import styled from "styled-components";
 
-// TodoBaseTemp
-// AppTitle
-// Content
-//
-
 const TodoBaseTemp = styled.div`
   width: 512px;
   margin-left: auto;

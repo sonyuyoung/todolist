@@ -3,18 +3,11 @@ import { useEffect } from "react";
 import { useState } from "react";
 import { useRef } from "react";
 import { CiSquareCheck } from "react-icons/ci";
-import App from "../App";
-import TodoMain from "./TodoMain";
+
 import styled from "styled-components";
 
 // 페이지 이동을 위한 설정 1
-import {
-  BrowserRouter,
-  Routes,
-  Route,
-  Link,
-  useNavigate,
-} from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 const TodolistFirst = () => {
   const StyledButton = styled.button`

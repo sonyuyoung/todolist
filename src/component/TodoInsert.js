@@ -1,16 +1,7 @@
-import { Button } from "antd";
 import React, { useCallback, useState } from "react";
-import { IoMdAddCircleOutline } from "react-icons/io";
 import styled from "styled-components";
-import { GrAdd } from "react-icons/gr";
 import { FcLike } from "react-icons/fc";
 
-// 아이콘 가지고 올 이름
-// io IoMdAddCircleOutline
-// css
-// 1.FormCss
-// 2. FormInputCss
-// 3. FormButtonCss
 const FormCss = styled.form`
   display: flex;
   background: #eeeeee;
