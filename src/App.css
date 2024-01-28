@@ -1,14 +1,15 @@
 /* mainLayout 클래스는 내용을 가운데 정렬하고 텍스트 색상을 지정하는 스타일을 정의합니다. */
 .mainLayout {
-  display: flex; /* Flex 컨테이너로 설정하여 자식 요소들을 수평으로 배치합니다. */
-  justify-content: center; /* 가로 방향으로 중앙 정렬합니다. */
-  color: #5b5151; /* 텍스트 색상을 지정합니다. */
-  font-size: 14px; /* 폰트 크기를 14픽셀로 설정합니다. */
+  display: flex;
+  justify-content: center;
+  align-items: center; /* 수직 가운데 정렬을 위해 추가 */
+  min-height: 60vh; /* 최소 높이를 화면 전체 높이로 설정 */
+  margin: 0;
+  padding: 0;
 }
-
 /* todoLayout 클래스는 할일 목록을 감싸는 컨테이너의 스타일을 정의합니다. */
 .todoLayout {
-  width: 100%;
+  width: 90%;
   /* 전체 너비에서 30픽셀을 뺀 값으로 설정합니다. */
   max-width: 700px; /* 최대 너비를 700픽셀로 제한합니다. */
   display: flex; /* Flex 컨테이너로 설정하여 자식 요소들을 수직으로 배치합니다. */
@@ -66,16 +67,19 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  max-width: 700px;
 }
 
 .todoItem {
-  width: 80%;
+  width: 96%;
+  max-width: 700px;
   display: flex;
   align-items: center;
   padding: 12px 0px 12px 0px;
   margin-bottom: 4px;
   margin-top: 4px;
   box-sizing: border-box;
+  border-bottom: 0.5px solid #d3c5c5;
 }
 
 .todoCheckBox {
